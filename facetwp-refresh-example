@@ -1,0 +1,8 @@
+<script>
+(function($) {
+  $(document).on('facetwp-refresh', function() {
+    var $tpl = $('.facetwp-template');
+    FWP.loaded ? $tpl.show() : $tpl.hide();
+  });
+})(jQuery);
+</script>
