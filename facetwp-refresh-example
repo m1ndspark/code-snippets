@@ -1,3 +1,6 @@
+add_action( 'wp_head', function() {
+?>
+
 <script>
 (function($) {
   $(document).on('facetwp-refresh', function() {
@@ -6,3 +9,6 @@
   });
 })(jQuery);
 </script>
+
+<?php
+}, 100 );
